@@ -1,0 +1,211 @@
+/* Capa */
+.capa {
+    background-image: url('contatoscapa.jpg'); /* Caminho da imagem*/
+    background-size: cover;
+    background-position: center;
+    height: 145vh; /* Ajusta a altura da capa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+ 
+  .contact-info {
+    display: flex; /* Para centralizar o conteúdo */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Define o tamanho da fonte */
+    font-family: "https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"; /* Define a fonte */
+    line-height: 1.4; /* Reduz o espaçamento entre as linhas */
+    margin: 0; /* Remove margens automáticas */
+    padding: 0; /* Remove espaçamento interno */
+    color: #360055;
+  }
+  
+
+.text-simple{
+    text-align: center; 
+    font-size: 1.8rem; 
+    color: #000000; 
+
+}
+ 
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    margin: 0 auto; /* Centraliza o conteúdo principal */
+    padding: 0; /* Remove espaçamento interno desnecessário */
+  }
+  
+
+
+
+
+  /* ESTILIZAÇÃO DO FORM */
+  
+  #contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #contact-form-container .contact_form {
+    width: 460px; 
+    border-radius: 10px;  
+    padding: 30px 30px 20px;  
+    background-color: var(--form-bg-color, #ffffff); /* Cor de fundo do formulário */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-form-container input, 
+  #contact-form-container select, 
+  #contact-form-container textarea {
+    background-color: var(--input-bg-color, #ffffff); 
+    width: 100%; 
+    height: 40px; 
+    border-radius: 5px;  
+    border: 1px solid var(--primary-color, #ab4493); 
+    margin-top: 10px;  
+    padding: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  #contact-form-container textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  #contact-form-container button {
+    height: 45px; 
+    margin: 10px 0 20px; 
+    text-transform: uppercase;
+    background-color: var(--primary-color, #ab4493); 
+    border: none; 
+    border-radius: 10px;	
+    width: 100%;   
+    cursor: pointer;
+  }
+  
+  #contact-form-container h1 {
+    font-size: 32px;  
+    text-align: left; 
+    padding-bottom: 20px; 
+    color: var(--primary-color, #ab4493);
+  }
+  
+  #contact-form-container h3 {
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: var(--text-color, #333333);   
+  }
+  
+  #contact-form-container p {
+    font-size: 14px; 
+    color: var(--text-color, #333333); 
+  }
+  
+  #contact-form-container ::placeholder {
+    color: var(--placeholder-color, #a8a8a8);
+  }
+  
+  #contact-form-container input:focus, 
+  #contact-form-container select:focus, 
+  #contact-form-container textarea:focus {
+    outline: none;
+    border: 1px solid var(--focus-color, #97d848);
+  }
+
+  :root {
+    --primary-color: #511b70; /* Cor principal */
+    --form-bg-color: #ffffff; /* Cor de fundo do formulário */
+    --input-bg-color: #f9f9f9; /* Cor de fundo dos campos */
+    --button-text-color: hsl(0, 0%, 100%); /* Cor do texto dos botões */
+    --text-color: #000000; /* Cor do texto */
+    --placeholder-color: #000000; /* Cor dos placeholders */
+    --focus-color: #360055; /* Cor do foco nos campos */
+  }
+
+  .opening-hours {
+    display: flex; /* Torna um contêiner flexível */
+    flex-direction: column; /* Alinha itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 50vh; /* Altura total da tela */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Tamanho do texto */
+    
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+    color: #360055; /* Cor do texto */
+  }
+  
+
+ 
+
+  /* Container principal */
+.content-section {
+    display: flex; /* Usa o Flexbox para alinhar os itens lado a lado */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Garante espaço entre a imagem e o texto */
+    margin: 20px auto; /* Centraliza o container na página */
+    max-width: 1200px; /* Define uma largura máxima */
+    padding: 20px; /* Espaçamento interno */
+    gap: 20px; /* Espaçamento entre os elementos */
+  }
+  
+  /* Estilo da imagem */
+  .content-section .image img {
+    max-width: 50%; /* Ajusta a imagem para não exceder o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra à imagem */
+    flex: 1; /* Faz a imagem ocupar espaço proporcional no layout */
+  }
+  
+  /* Estilo do texto */
+  .content-section .text {
+    flex: 1; /* Faz o texto ocupar espaço proporcional no layout */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    color: #360055; /* Cor do texto */
+  }
+  
+  .content-section .text h2 {
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+  }
+  
+  .content-section .text p {
+    font-size: 18px; /* Tamanho do texto */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+  }
+
+  .map-container {
+    text-align: center; /* Centraliza o título */
+    margin: 20px auto; /* Adiciona margens */
+    max-width: 800px; /* Define a largura máxima do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #360055; /* Borda para destacar */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ao redor do mapa */
+  }
+  
+  .map-container h2 {
+    font-size: 24px; /* Tamanho do título */
+    color: #360055; /* Cor do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-family: Arial, sans-serif; /* Fonte do título */
+  }
+  

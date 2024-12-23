@@ -1,0 +1,60 @@
+footer {
+  background-color: #360055; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno uniforme */
+  text-align: center; /* Centraliza o texto */
+}
+
+.footer-container {
+  display: flex; /* Ativa o flexbox */
+  justify-content: space-around; /* Distribui igualmente os elementos */
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+  max-width: 1200px; /* Limita a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.footer-container div {
+  margin: 10px; /* Espaçamento entre as seções */
+  flex: 1; /* Todos os elementos têm largura igual */
+  min-width: 200px; /* Garante que cada item tenha um tamanho mínimo */
+}
+
+.footer-container h4 {
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.footer-container p {
+  margin: 5px 0; /* Reduz o espaçamento entre os parágrafos */
+}
+
+.footer-container ul {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento padrão */
+}
+
+.footer-container a {
+  color: white; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-container a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer-bottom {
+  border-top: 1px solid white; /* Linha superior no rodapé */
+  padding-top: 10px; /* Espaçamento acima do texto */
+  margin-top: 20px; /* Espaçamento entre a linha e o conteúdo acima */
+}
+
+.footer-contact-info {
+  color: white;
+  margin: 10px;
+}
+
+.footer-contact-info p {
+  margin: 5px 0; /* Reduz o espaçamento entre os parágrafos. RELACIONADO COM O ERRO DA PAGINA CONTATOS */
+}
+
+  
+  

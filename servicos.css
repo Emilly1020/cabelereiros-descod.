@@ -1,0 +1,180 @@
+
+/* Capa */
+.capa {
+  background-image: url('capaservicos.jpg'); /* Caminho da imagem*/
+  background-size: cover;
+  background-position: center;
+  height: 145vh; /* Ajusta a altura da capa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pintas {
+  background-image: url('2imgservicos.jpg'); /* Caminho da imagem*/
+  background-size: cover;
+  background-position: center;
+  height: 145vh; /* Ajusta a altura da capa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Texto normal */
+.content-text {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+.content-text h2 {
+  font-size: 2rem;
+  color: #670edb;
+}
+
+.content-text p {
+  font-size: 1.2rem;
+  color: #360055;
+  }
+
+.content-text ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.content-text ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Estilo geral para todas as seções collapsible */
+.collapsible {
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.collapsible label {
+  display: block;
+  cursor: pointer;
+  background-color: #360055;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.collapsible input[type="checkbox"] {
+  display: none; /* Esconde o checkbox */
+}
+
+.collapsible .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+/* Exibe o conteúdo quando o checkbox está marcado */
+.collapsible input[type="checkbox"]:checked ~ .content {
+  max-height: 200px;
+  padding: 10px;
+}
+
+.content ul {
+  list-style: disc; /* Usa marcadores */
+  margin-left: 20px; /* Espaço à esquerda */
+  padding: 10px;
+}
+
+.content li {
+  margin-bottom: 10px; /* Espaço entre itens */
+}
+
+.content strong {
+  color: #360055; /* Cor do texto em negrito */
+}
+
+body {
+  font-family: 'Lora', serif;
+}
+
+/* Ajustar o texto normal */
+.content-text {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.5rem; /* Aumenta o tamanho do texto */
+}
+
+/* Estilo para os títulos */
+.content-text h2 {
+  font-size: 2.5rem; /* Tamanho maior para os títulos */
+  color: #670edb;
+  text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para o texto normal */
+.content-text p {
+  font-size: 2.3rem; /* Aumenta o texto */
+  color: #360055;
+}
+
+/* Estilo para listas */
+.content-text ul {
+  list-style: disc;
+  margin: 20px auto; /* Centraliza a lista */
+  padding: 10px;
+  text-align: center;
+}
+
+.content-text ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem; /* Aumenta o tamanho dos itens da lista */
+}
+
+* Estilo para os títulos */
+.content-text h2 {
+  font-size: 2.5rem; /* Tamanho maior para os títulos */
+  color: #670edb;
+  text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para o texto normal */
+.content-text p {
+  font-size: 1.3rem; /* Aumenta o texto */
+  color: #360055;
+}
+
+/* Estilo para listas */
+.content-text ul {
+  list-style: disc;
+  margin: 20px auto; /* Centraliza a lista */
+  padding: 10px;
+  text-align: center;
+}
+
+.content-text ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem; /* Aumenta o tamanho dos itens da lista */
+}
+
+/* Estilo para collapsibles */
+.collapsible label {
+  font-size: 1.5rem; /* Aumenta o texto do label */
+  text-align: center; /* Centraliza o texto do label */
+}
+
+.collapsible .content {
+  font-size: 1.3rem; /* Aumenta o texto do conteúdo */
+  text-align: center; /* Centraliza o texto */
+}

@@ -1,0 +1,278 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+
+label {
+  background: #444;
+  color: #fff;
+  transition: transform 400ms ease-out;
+  display: inline-block;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 100vh;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+}
+input {
+  position: absolute;
+}
+
+.keys {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  transition: all 300ms linear;
+  opacity: 0;
+}
+
+input:focus ~ .keys {
+  opacity: 0.8;
+}
+
+input:nth-of-type(1):checked ~ label:nth-of-type(1), 
+input:nth-of-type(2):checked ~ label:nth-of-type(2),
+input:nth-of-type(3):checked ~ label:nth-of-type(3),
+input:nth-of-type(4):checked ~ label:nth-of-type(4){
+   z-index: 0;
+}
+
+input:nth-of-type(1):checked ~ label {
+  transform: translate3d(0, 0, 0);
+}
+
+input:nth-of-type(2):checked ~ label {
+  transform: translate3d(-100%, 0, 0);
+}
+
+input:nth-of-type(3):checked ~ label {
+  transform: translate3d(-200%, 0, 0);
+}
+
+input:nth-of-type(4):checked ~ label {
+  transform: translate3d(-300%, 0, 0);
+}
+
+label {
+  background-size: cover; /* Faz a imagem cobrir todo o label */
+  font-size: 3rem;
+  display: inline-block;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 100vh;
+}
+
+label {
+  background-size: cover; /* Faz a imagem cobrir todo o label */
+  font-size: 3rem;
+  display: inline-block;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 100vh;
+}
+
+label[for="clubs"] {
+  background-image: url('JUBILEU\ DA\ ELEGÂNCIA.png'); 
+}
+
+label[for="hearts"] {
+  background-image: url('manicure1.png'); 
+}
+
+label[for="spades"] {
+  background-image: url('barbearia.png'); 
+}
+
+label[for="diamonds"] {
+  background-image: url('maquiagem.png'); 
+}
+
+label:before,
+label:after {
+  color: white;
+  display: block;
+  background: rgba(255,255,255,0.2);
+  position: absolute;
+  padding: 1rem;
+  font-size: 3rem;
+  height: 10rem;
+  vertical-align: middle;
+  line-height: 10rem;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  cursor: pointer;
+}
+
+label:before {
+  content: "\276D";
+  right: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+label:after {
+  content: "\276C";
+  left: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* Adicionando estilo para o conteúdo de texto normal */
+.content-text {
+  margin-top: 100px; /* Adiciona um espaço acima para separar do carrossel */
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.content-text h2, .content-text h3 {
+  font-size: 2rem;
+  color: #360055;
+}
+
+.content-text p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.content-text ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.content-text ul li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Adicionando um pouco de espaço no topo do conteúdo de texto */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Permite o scroll na página */
+}
+
+/* Removendo o overflow do body */
+body {
+  overflow: auto; /* Isso permite que o conteúdo role */
+}
+
+.content-text {
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 120vh; /* Ajustei para garantir que o conteúdo não sobreponha o carrossel */
+}
+
+.content-text h2, .content-text h3 {
+  font-size: 2rem;
+  color: #360055;
+}
+
+.content-text p {
+  font-size: 1.2rem;
+  color: #360055;
+}
+
+.content-text ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.content-text ul li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  font-size: 2.5rem; /* Tamanho maior para o título */
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: #360055; /* Cor de destaque */
+  margin: 0; /* Remove qualquer margem extra */
+  padding: 20px 0; /* Dá um pouco de espaço ao redor do título */
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os itens */
+  margin-top: 20px; /* Espaço acima do bloco */
+}
+
+.service {
+  text-align: center; /* Centraliza o texto abaixo das imagens */
+}
+
+.service img {
+  width: 150px; /* Largura das imagens */
+  height: auto; /* Mantém a proporção */
+  border-radius: 10px; /* Bordas arredondadas (opcional) */
+}
+
+.service p {
+  margin-top: 10px; /* Espaço entre a imagem e o texto */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  color: #360055; /* Cor do texto */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede que a página tenha rolagem horizontal */
+}
+
+.carousel {
+  max-width: 100%; /* Garante que o carrossel nunca ultrapasse a largura da tela */
+  overflow: hidden; /* Esconde qualquer coisa que esteja fora da área visível */
+}
+
+.carousel img {
+  width: 100%; /* Faz com que as imagens se ajustem à largura do slider */
+  height: auto; /* Mantém as proporções das imagens */
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* Fundo opcional para destacar o vídeo */
+  padding: 20px 0; /* Espaçamento ao redor do vídeo */
+}
+
+.custom-video {
+  max-width: 90%; /* Ajusta o tamanho do vídeo para telas menores */
+  height: auto; /* Mantém a proporção do vídeo */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}

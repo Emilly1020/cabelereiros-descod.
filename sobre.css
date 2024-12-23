@@ -1,0 +1,92 @@
+/* Capa */
+.capa {
+    background-image: url('sobrenoscapa.jpg'); /* Caminho da imagem*/
+    background-size: cover;
+    background-position: center;
+    height: 145vh; /* Ajusta a altura da capa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .about-content p {
+    font-size: 1.5rem; /* Aumenta o tamanho do texto */
+    line-height: 1.8; /* Ajusta o espaçamento entre as linhas */
+    margin-bottom: 20px; /* Espaçamento entre parágrafos */
+    text-align: justify; /* Justifica o texto */
+  }
+  
+  .about-content .highlight {
+    color: #360055; /* Muda a cor para vermelho */
+    font-weight: bold; /* Adiciona destaque */
+  }
+
+  .image-row {
+    display: flex; /* Coloca os itens lado a lado */
+    justify-content: space-between; /* Espaçamento entre as imagens */
+    gap: 10px; /* Espaçamento entre as imagens */
+  }
+  
+  .image-row img {
+    width: 48%; /* Ajustei a largura de cada imagem */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 5px; /* Adicionei bordas arredondadas */
+  }
+  
+  
+    .about-content h3 {
+        text-align: center; /* Centraliza o texto horizontalmente */
+        font-size: 1.8rem; /* Ajusta o tamanho da fonte */
+        color: #360055; /* Cor do texto (opcional) */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+      }
+      
+  
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaço entre os cards */
+    margin: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column; /* Empilha imagem e texto */
+    align-items: center; /* Centraliza o conteúdo */
+    background-color: #f8f8f8; /* Cor de fundo do card */
+    border: 1px solid #ddd; /* Borda dos cards */
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px; /* Largura fixa dos cards */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .card img {
+    width: 100%; /* Largura da imagem proporcional ao card */
+    border-radius: 8px; /* Arredonda os cantos */
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Negrito para os nomes */
+  }
+  
+  .about-content h2{
+    
+        text-align: center; 
+        font-size: 1.8rem; 
+        color: #360055; 
+        margin-bottom: 20px;
+
+  }
+
+
+ 

@@ -1,0 +1,89 @@
+/* Capa */
+.capa {
+    background-image: url('clientescapa.jpg'); /* Caminho da imagem*/
+    background-size: cover;
+    background-position: center;
+    height: 145vh; /* Ajusta a altura da capa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .testimonials-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaçamento entre as colunas */
+    gap: 20px; /* Espaço entre os itens */
+    margin: 20px 0;
+  }
+  
+  .testimonial {
+    flex: 1; /* Itens ocupam o mesmo espaço */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fundo claro */
+    border: 1px solid #360055; /* Borda fina */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: justify; /* Alinha o texto nas margens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    font-size: 20px; /* Aumenta o tamanho do texto */
+  line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+  }
+  
+  .testimonial h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px; /* Aumenta o tamanho do nome */
+    font-weight: bold;
+    color: #360055;
+  }
+  .about-content h2{
+    
+    text-align: center; 
+    font-size: 1.8rem; 
+    color: #360055; 
+    margin-bottom: 20px;
+
+}
+
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
+body {
+    background: color(srgb #fdfdfd #fdfdfd hsl(0, 0%, 100%))
+        center center/cover no-repeat;
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+    border: 10px solid #fefae0;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: 1s;
+}
+
+img:hover {
+    border: 5px solid #fff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+  

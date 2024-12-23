@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatos - Jubileu da Elegância</title>
+  <link rel="stylesheet" href="contatos.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="script.js">
+
+</head>
+<body>
+  <header class="header">
+
+    <header class="header">
+        <div class="content">
+          <a href="index.html" class="logo">
+            <img src="Logotipo Nome Monograma Minimalista Preto e Branco.png" alt="Jubileu da Elegância">
+          </a>
+          
+          <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+          <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+          
+          <ul class="nav">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="servicos.html" title="Serviços">Serviços</a></li>
+            <li><a href="sobre.html" title="Sobre Nós">Sobre Nós</a></li>
+            <li><a href="clientes.html" title="Clientes">Clientes</a></li>
+            <li><a href="contatos.html" title="Contatos">Contatos</a></li>
+          </ul>
+        </div>
+      </header>
+    <!-- Mesmo header com os links -->
+  </header>
+
+  <main>
+
+     <!-- Capa com a imagem -->
+ <div class="capa">
+  <h1>Contatos</h1>
+</div>
+
+<div class="content-section">
+  <div class="image">
+    <img src="contatos2.jpg" alt="Atendente sorrindo.">
+  </div>
+  <div class="text">
+    <h2>O que te espera no Jubileu da Elegância?</h2>
+    <p>Um novo conceito em beleza.</p>
+  </div>
+</div>
+
+<div class="opening-hours">
+  <p>De segunda a quarta, das 9h às 18h.</p>
+  <p>Quinta a sexta, das 9h às 20h.</p>
+  <p>Sábado, das 9h às 18h.</p>
+  <p>Domingo Fechado.</p>
+</div>
+
+
+<div id="contact-form-container">
+  <div class="contact_form">
+    <h1>Formulário de Contato</h1>
+    <h3>Envie sua mensagem e entraremos em contato em breve</h3>
+    <form action="submeter-formulario.php" method="post">
+      <p>
+        <label for="nome" class="colocar_nome">Nome
+          <span class="obrigatorio">*</span>
+        </label>
+        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+      </p>
+      <p>
+        <label for="email" class="colocar_email">E-mail
+          <span class="obrigatorio">*</span>
+        </label>
+        <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+      </p>
+      <p>
+        <label for="telefone" class="colocar_telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+      </p>
+      <p>
+        <label for="dia" class="colocar_dia">Dia Disponível
+          <span class="obrigatorio">*</span>
+        </label>
+        <select name="dia" id="dia" required>
+          <option value="" disabled selected>Selecione um dia</option>
+          <option value="segunda">Segunda-feira</option>
+          <option value="terca">Terça-feira</option>
+          <option value="quarta">Quarta-feira</option>
+          <option value="quinta">Quinta-feira</option>
+          <option value="sexta">Sexta-feira</option>
+          <option value="sabado">Sábado</option>
+        </select>
+      </p>
+      <p>
+        <label for="hora" class="colocar_hora">Horário Disponível
+          <span class="obrigatorio">*</span>
+        </label>
+        <input type="time" name="hora" id="hora" required>
+      </p>
+      <p>
+        <label for="mensagem" class="colocar_mensagem">Mensagem
+          <span class="obrigatorio">*</span>
+        </label>
+        <textarea name="mensagem" id="mensagem" required placeholder="Deixe aqui sua mensagem..."></textarea>
+      </p>
+      <button type="submit" name="enviar_formulario" id="enviar">
+        <p>Enviar</p>
+      </button>
+      <p class="aviso">
+        <span class="obrigatorio">*</span> Os campos são obrigatórios.
+      </p>
+    </form>
+  </div>
+</div>
+
+
+
+<div class="map-container">
+  <h2>Encontre-nos</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8811230163256!2d-46.63330998437427!3d-23.5557075846827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c6a7d74af9%3A0x6f51ab88c00e8cf5!2sAvenida+Paulista%2C+São+Paulo+-+SP%2C+Brasil!5e0!3m2!1spt-BR!2sus!4v1703200023443!5m2!1spt-BR!2sus" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+
+<div class="text-simple">
+  <strong><p><h4>Estamos localizados no Endereço: Rua Jubileu, 123, Jardim Encantado</h4></p></strong>
+</div>
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-contact-info">
+      <h4>Contato</h4>
+      <p>Endereço: Rua Jubileu, 123</p>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>E-mail: contato@exemplo.com</p>
+    </div>
+    
+    <div class="quick-links">
+      <h4>Links Úteis</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contatos.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="social-media">
+      <h4>Siga-nos</h4>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Jubileu da Elegância. Todos os direitos reservados. Criado por Emilly Santos</p>
+
+  </div>
+</footer>
+
+
+
+
+  </main>
+
+  
+</body>
+</html>
